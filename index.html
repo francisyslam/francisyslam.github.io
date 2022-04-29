@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Noto+Sans+HK&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eee;
+      font-family: 'Noto Sans HK', sans-serif;
+      font-size: 80%;
+      margin: 20px;
+    }
+  </style>
+</head>
 <body>
-<h1>Canalside Studio</h1>
-<p>francis@canalside.studio</p>
+  <div style="font-family: 'DM Sans', sans-serif; font-size: 200%;">Canalside Studio</div>
+  <div>design | spaces | experiences | objects</div>
+  <div><u>hello@canalside.studio</u></div>
+
+  <script>
+    function randomBackgroundColour(){
+      const bgcolours = ["#eee", "#f2da91", "#ffa666", "#7bd1b7", "#ddd", "#ff906e", "#a4c476", "#5ac77a", "#76b6d6", "#b8678a"];
+      var r = Math.floor((Math.random() * bgcolours.length));
+      document.body.style.background = bgcolours[r];
+    }
+    window.addEventListener("load",function() {
+      randomBackgroundColour();
+    });
+  </script>
 </body>
 </html>
